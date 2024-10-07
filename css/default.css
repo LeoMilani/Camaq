@@ -1,0 +1,351 @@
+@Charset "UTF-8";
+
+body {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 120px;
+    background-color: #0e2d3f;
+}
+
+header h1 {
+    color: #FFF;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+    font-size: 35px;
+}
+
+header a {
+    margin: 0px;
+    padding: 0px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+form {
+    padding-left: 70px;
+    padding-top: 10px;
+    left: 45px;
+}
+
+.box {
+    position: absolute;
+    margin-left: 20px;
+}
+
+/*
+.user {
+    font-size: 40px;
+    color: #fff;
+    float: left;
+    position: relative;
+    left: 800px;
+    bottom: 60px;
+}
+
+.user i {
+    color: #fff;
+    position: relative;
+    top: 10px
+}
+
+.user a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px;
+    color: #FFF;
+    font-size: 20px;
+    position: relative;
+    top: 12px;
+}
+
+*/
+
+.phone {
+    position: relative;
+    left: 1100px;
+    bottom: 52px;
+}
+
+.phone i {
+    font-size: 35px;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 160px;
+}
+
+.phone h2 {
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 20px;
+    position: relative;
+    bottom: 35px;
+    left: 55px;
+    text-decoration: none;
+}
+
+.phone a {
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    top: 25px;
+    font-weight: bold;
+    left: 160px;
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+
+ul.categoria {
+    border: outset;
+    height: 70px;
+    padding: 0px;
+}
+
+ul.categoria li {
+    display: inline-block;
+}
+
+ul.categoria li a {
+    font-size: 30px;
+    bottom: 5px;
+    padding: 70px;
+    text-decoration: none;
+    color: #000;
+}
+
+ul.categoria li i {
+    font-size: 34px;
+    bottom: 57px;
+}
+
+.anuncio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+nav {
+    text-align: center;
+    line-height: 76px;
+}
+
+nav h2 {
+    margin-left: 40px;
+}
+
+.p2 {
+    display: inline-block;
+    width: 10px;
+}
+
+div.produtos input.botao {
+    background-color: #0e2d3f;
+    color: #FFF;
+}
+
+div.produtos input.botao:hover {
+    background-color: #FFF;
+    color: #0e2d3f;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
+span.valorAntigo {
+    font-size: 11px;
+    text-decoration: line-through;
+    display: block;
+}
+
+section .valorAtual {
+    font-weight: bold;
+}
+
+div.produto {
+    display: inline-block;
+}
+
+.img {
+    height: 250px;
+    width: 350px;
+    padding: 3px;
+    box-shadow: 5px 5px 2px #0e2d3f;
+}
+
+section iframe {
+    margin-top: 5px;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: #0e2d3f;
+}
+
+.footerN h2 {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    color: #FFF;
+    position: relative;
+    top: 120px;
+}
+
+ul.redeSocial {
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+}
+
+ul.redeSocial li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul.redeSocial li a {
+    font-size: 55px;
+    top: 42px;
+    color: #FFF;
+}
+
+ul.redeSocial li.number {
+    margin: auto;
+    display: inline-block;
+}
+
+ul.redeSocial li.number i {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    top: 10px;
+}
+
+ul.redeSocial li.number h3 {
+    margin: 0px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+@media (max-width: 450px) {
+    header div.header a {
+        font-size: 20px;
+    }
+
+    header input {
+        font-size: 15px;
+        position: relative;
+        top: 30px;
+        right: 70px;
+    }
+
+    header .phone {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+    }
+
+    header .phone i {
+        font-size: 25px;
+        color: #11dc1f;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    header .phone a {
+        color: #000000;
+        font-size: 16px;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        top: -5px;
+    }
+
+    ul.categoria {
+        padding: 0px;
+    }
+
+    ul.categoria li a {
+        float: left;
+        font-size: 20px;
+        padding: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    ul.categoria li i {
+        position: relative;
+        top: 7px;
+        font-size: 18px;
+    }
+
+    .anuncio {
+        display: none;
+    }
+
+    .produtos {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .produtos .produto p {
+        position: relative;
+        left: 95px;
+    }
+
+    span.valorAntigo {
+        position: relative;
+        left: 95px;
+    }
+
+    span.valorAtual {
+        position: relative;
+        left: 95px;
+    }
+
+    div.produtos input.botao {
+        position: relative;
+        left: 115px;
+    }
+
+    .produtos .produto img {
+        margin: 0 auto;
+        position: relative;
+        left: 25px;
+    }
+
+}
