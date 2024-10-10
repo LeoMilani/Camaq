@@ -59,8 +59,5 @@ function searchProduct() {
         const productName = product.querySelector("p").textContent.toLowerCase(); // Get the product name
         product.style.display = productName.includes(searchValue) ? "block" : "none"; // Show or hide the product
     });
-
-    //warning message if the user press enter without typing anything
 }
-
 
