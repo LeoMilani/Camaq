@@ -188,7 +188,7 @@ div.produto {
     height: 250px;
     width: 350px;
     padding: 3px;
-    box-shadow: 5px 5px 2px #0e2d3f;
+    box-shadow: 6px 7px 7px 5px #0e2d3f;
 }
 
 section iframe {
@@ -255,6 +255,13 @@ ul.redeSocial li.number h3 {
 
 
 @media (max-width: 450px) {
+
+
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     header div.header a {
         font-size: 20px;
     }
@@ -286,21 +293,32 @@ ul.redeSocial li.number h3 {
     }
 
     ul.categoria {
-        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: #f4f4f4;
+    }
+
+    ul.categoria li {
+        display: flex;
+        align-items: center;
     }
 
     ul.categoria li a {
-        float: left;
-        font-size: 20px;
-        padding: 5px;
+        font-size: 16px;
+        padding: 10px 5px;
         text-decoration: none;
         color: #000;
+        display: inline-block;
     }
 
     ul.categoria li i {
-        position: relative;
-        top: 7px;
         font-size: 18px;
+        margin: 0 10px;
+        color: #000;
     }
 
     .anuncio {
@@ -314,17 +332,17 @@ ul.redeSocial li.number h3 {
 
     .produtos .produto p {
         position: relative;
-        left: 95px;
+        left: 75px;
     }
 
     span.valorAntigo {
         position: relative;
-        left: 95px;
+        left: 75px;
     }
 
     span.valorAtual {
         position: relative;
-        left: 95px;
+        left: 75px;
     }
 
     div.produtos input.botao {
