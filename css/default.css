@@ -253,7 +253,6 @@ ul.redeSocial li.number h3 {
 }
 
 
-
 @media (max-width: 450px) {
 
     * {
@@ -335,12 +334,12 @@ ul.redeSocial li.number h3 {
 
     .produtos .produto p {
         position: relative;
-        left: 75px;
+        left: 45px;
     }
 
     span.valorAntigo {
         position: relative;
-        left: 75px;
+        left: 45px;
     }
 
     span.valorAtual {
