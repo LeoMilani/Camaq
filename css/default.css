@@ -271,6 +271,24 @@ ul.redeSocial li.number h3 {
         right: 70px;
     }
 
+header .phone {
+
+        display: none;
+    }
+
+    header .phone i {
+        font-size: 25px;
+        color: #11dc1f;
+    }
+
+    header .phone a {
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        top: -5px;
+    }
 
 
     ul.categoria {
