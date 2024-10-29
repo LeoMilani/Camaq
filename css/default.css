@@ -271,25 +271,14 @@ ul.redeSocial li.number h3 {
         right: 70px;
     }
 
-header .phone {
 
+    header .phone i {
         display: none;
     }
 
-    header .phone i {
-        font-size: 25px;
-        color: #11dc1f;
-    }
-
     header .phone a {
-        color: #000000;
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: bold;
-        position: relative;
-        top: -5px;
+        display: none;
     }
-
 
     ul.categoria {
         display: flex;
@@ -331,12 +320,12 @@ header .phone {
 
     .produtos .produto p {
         position: relative;
-        left: 25px;
+        left: 45px;
     }
 
     span.valorAntigo {
         position: relative;
-        left: 25px;
+        left: 45px;
     }
 
     span.valorAtual {
@@ -352,7 +341,134 @@ header .phone {
     .produtos .produto img {
         margin: 0 auto;
         position: relative;
-        left: 15px;
+        left: 35px;
     }
 
 }
+
+@media (max-width:660px) {
+
+
+    header .phone {
+        display: none;
+    }
+
+    ul.categoria {
+        display: flex;
+        justify-content: space-around;
+        /* Ensure equal spacing between all categories */
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: #f4f4f4;
+    }
+
+    ul.categoria li {
+        flex-grow: 1;
+        /* Ensures all items have equal space */
+        text-align: center;
+        /* Center the text for each category */
+    }
+
+    ul.categoria li a {
+        font-size: 16px;
+        padding: 10px 5px;
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+    }
+
+    ul.categoria li i {
+        font-size: 18px;
+        margin: 0 10px;
+        color: #000;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two equal-width columns */
+        gap: 20px;
+        /* Space between items */
+    }
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ensure the images don't distort */
+    .produto img {
+        max-width: 100%;
+        /* Image scales down, but never stretches wider than its container */
+        height: auto;
+        /* Maintain aspect ratio */
+        display: block;
+        /* Removes any inline spaces */
+    }
+
+}
+
+@media only screen and (min-width:661px) and (max-width:995px) {
+
+    .phone {
+        /* Para centralizar e ajustar a posição dentro da tela */
+        position: relative;
+        margin: 0 auto;
+        /* Centraliza a div na horizontal */
+        left: 0;
+        /* Remove qualquer deslocamento horizontal */
+        transform: translateX(0);
+        /* Garante que não tenha deslocamento */
+
+        /* Alternativa usando flex para alinhar centralizado dentro do container */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phone i {
+        display: none;
+    }
+
+    .phone a {
+        display: none;
+    }
+
+    /* Ajuste para que o conteúdo principal mantenha um layout consistente */
+    .header .box {
+        display: flex;
+        flex-direction: column;
+        /* Exibe as divs em coluna */
+        align-items: center;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Responsivo e centralizado */
+        gap: 20px;
+        justify-items: center;
+        /* Centraliza cada coluna de imagem */
+        padding: 0 20px;
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 6px 7px 7px 5px #0e2d3f;
+    }
+}
+
+@media only screen and (min-width:995px) and (max-width:1200px) {
+
+    header .phone {
+        display: none;
+    }
+}
+
+@media (min-width:1201px) {}
