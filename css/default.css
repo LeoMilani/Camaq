@@ -316,6 +316,8 @@ ul.redeSocial li.number h3 {
     .produtos {
         margin: 0px;
         padding: 0px;
+        grid-template-columns: 1fr;
+        /* Uma coluna em telas pequenas */
     }
 
     .produtos .produto p {
@@ -387,7 +389,8 @@ ul.redeSocial li.number h3 {
 
     .produtos {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas */
         /* Two equal-width columns */
         gap: 20px;
         /* Space between items */
@@ -448,7 +451,8 @@ ul.redeSocial li.number h3 {
 
     .produtos {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas */
         /* Responsivo e centralizado */
         gap: 20px;
         justify-items: center;
@@ -466,9 +470,19 @@ ul.redeSocial li.number h3 {
 
 @media only screen and (min-width:995px) and (max-width:1200px) {
 
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+        /* Três colunas */
+    }
+
     header .phone {
         display: none;
     }
 }
 
-@media (min-width:1201px) {}
+@media (min-width:1201px) {
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+        /* Quatro colunas */
+    }
+}
